@@ -10,7 +10,7 @@
 
 **文件夹[Quize&Answer](./Quize&Answer)**:存放randomQuizGeneratir.py创建的问答试卷的文件夹
 
-**文件[test.txt](./test.txt)**:用于测试madlib.py
+**文件[text.txt](./text.txt)**:用于测试madlib.py
 
 ### 2.OS
 
@@ -26,7 +26,7 @@ import os
 
 **os.path.abspath(path)**：返回参数的绝对路径
 
-**os.path.relpath(path,start)**返回从start路径到path的相对路径
+**os.path.relpath(path,start)**：返回从start路径到path的相对路径
 
 **os.path.isbas(path)**：判断是否是绝对路径
 
