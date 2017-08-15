@@ -46,3 +46,41 @@ outputWrite.writerow(['spam','eggs','ham','bacon'])
 
 Write对象的writerow方法接收一个列表参数。
 
+
+
+### 3.JSON模块
+
+Python的JSON模块处理了JSON数据字符串和python值之间转换的所有细节，主要用到json.loads()和json.dumps()函数。
+
+使用loads()函数读取JSON：
+
+```shell
+>>> import json
+>>> stringOfJsonData='{"name":"Jake","isCat":true,"miceCaught":0,"felineIQ":null}'
+>>> jsonDataAsPythonValue = json.loads(stringOfJsonData)
+>>> jsonDataAsPythonValue
+{u'miceCaught': 0, u'isCat': True, u'felineIQ': None, u'name': u'Jake'}
+>>>
+```
+
+向loads()函数传入一个JSON数据字符串，函数会将该数据返回为一个python字典。python字典是无序的，所以键值对以不同的顺序出现。
+
+使用dumps()函数写出JSONl：
+
+```shell
+>>> import json
+>>> pythonValue = {'isCat':True,'miceCaught':0,'name':'Zophie','felineIQ':None}
+>>> stringOfJsonData = json.dumps(pythonValue)
+>>> stringOfJsonData
+'{"miceCaught": 0, "isCat": true, "felineIQ": null, "name": "Zophie"}'
+>>>
+```
+
+dumps()函数将传入的python值转换成JSON格式的数据字符串。
+
+
+
+
+
+
+
