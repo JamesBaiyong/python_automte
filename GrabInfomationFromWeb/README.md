@@ -21,7 +21,7 @@ webbrower.open('http://www.163.com')
 
 用于从web上下载文件和网页，不用担心网络错误，链接，数据压缩等问题。
 
-*下载页面和检查错误
+下载页面和检查错误
 
 ```python
 import requests
@@ -43,7 +43,7 @@ res.rase_for_status()#下载文件出错则抛出异常，否则什么都不做
 
 启动并控制浏览器
 
-*启动控制浏览器
+启动控制浏览器
 
 ```py
 from selenium import webdriver
@@ -53,5 +53,5 @@ brower.get(URL)
 
 
 
-*页面中寻找元素
+页面中寻找元素
 
